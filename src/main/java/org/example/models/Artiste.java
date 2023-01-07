@@ -3,6 +3,12 @@ package org.example.models;
 
 import javax.persistence.*;
 
+////////////////////////////////////////////////////////////
+///this entity has a many to many relationship with album
+///////////////////////////////////////////////////////////
+
+
+
 @Entity
 @Table(name = "Artistes")
 public class Artiste {
@@ -12,6 +18,7 @@ public class Artiste {
 
 
     @Column(nullable = false,unique = true)
+   // @ManyToMany
     private String name;
 
     @Column()
