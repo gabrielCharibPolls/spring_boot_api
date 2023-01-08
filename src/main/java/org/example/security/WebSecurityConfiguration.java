@@ -21,7 +21,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
  private UserDetailsService userDetailsService;
 
  private static final String[] AUTH_WHITELIST = {
-         "/h2-console/**",
          "/api/**",
          "/home",
          "/swagger-resources/**",
@@ -31,7 +30,10 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
          "/v2/**",
          "/v3/**",
          "/hello",
+         "/hola",
+         "/",
          "/login/**",
+         "/artistes",
          "/webjars/**"
  };
 
