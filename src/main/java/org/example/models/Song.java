@@ -16,6 +16,30 @@ public class Song {
     private String name ;
 
 
+    public String getNameOfASong() {
+        return nameOfASong;
+    }
+
+    public void setNameOfASong(String nameOfASong) {
+        this.nameOfASong = nameOfASong;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getSong_duration() {
+        return song_duration;
+    }
+
+    public void setSong_duration(int song_duration) {
+        this.song_duration = song_duration;
+    }
+
     @Column()
     //////////////////////////////
     //duration of the second song

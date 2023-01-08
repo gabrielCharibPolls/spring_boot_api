@@ -28,6 +28,10 @@ public class Artiste {
     @Column()
     private String description;
 
+    public Artiste() {
+
+    }
+
     public long getId() {
         return id;
     }
