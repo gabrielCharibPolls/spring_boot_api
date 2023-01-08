@@ -1,13 +1,14 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:helb
-    username: sa
-    password: password
-  driver-class-name: org.h2.Driver
-jpa:
-  database-platform: org.hibernate.dialect.H2Dialect
-  defer-datasource-initialization: true
-h2:
-  sconsole.enabled: true
+    url: jdbc:mysql://localhost:8085/api
+    username: gabriel
+    password: charib
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
 server:
   port : 8085
