@@ -16,6 +16,10 @@ public class Artiste {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id ;
 
+    public Artiste(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
 
     @Column(nullable = false,unique = true)
    // @ManyToMany
